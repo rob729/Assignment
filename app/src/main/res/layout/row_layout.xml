@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/hashTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hash Code"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/hashValueTxt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/amountTxt"/>
+
+        <TextView
+            android:id="@+id/amountTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Amount"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/hashTxt"
+            app:layout_constraintStart_toStartOf="@id/hashTxt"
+            app:layout_constraintTop_toBottomOf="@id/hashTxt" />
+
+        <TextView
+            android:id="@+id/timeTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Time"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/hashTxt"
+            app:layout_constraintStart_toStartOf="@id/hashTxt"
+            app:layout_constraintTop_toBottomOf="@id/amountTxt" />
+
+        <TextView
+            android:id="@+id/hashValueTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:maxLines="2"
+            app:layout_constraintBottom_toBottomOf="@id/hashTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/hashTxt"
+            app:layout_constraintTop_toTopOf="@id/hashTxt"
+            tools:text="hash value" />
+
+        <TextView
+            android:id="@+id/amountValueTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/hashValueTxt"
+            app:layout_constraintStart_toStartOf="@id/hashValueTxt"
+            app:layout_constraintTop_toTopOf="@id/amountTxt"
+            tools:text="amount value" />
+
+        <TextView
+            android:id="@+id/timeValueTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/hashValueTxt"
+            app:layout_constraintStart_toStartOf="@id/hashValueTxt"
+            app:layout_constraintTop_toTopOf="@id/timeTxt"
+            tools:text="time value" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
